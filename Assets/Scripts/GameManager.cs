@@ -19,6 +19,7 @@ namespace Assets.Scripts
                 OnChangedCurrency.Invoke(value);
             }
         }
+
         private void Awake()
         {
             if (Instance != null && Instance != this)

@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 689818532481455718}
   - component: {fileID: 3022315117742577969}
   m_Layer: 0
-  m_Name: Fox Fable Shop Data
+  m_Name: Fox Shop Data
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

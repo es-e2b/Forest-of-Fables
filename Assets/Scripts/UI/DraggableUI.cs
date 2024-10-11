@@ -7,21 +7,31 @@ namespace Assets.Scripts.UI
 
     public class DraggableTargetUI : MonoBehaviour, IPointerDownHandler, IDragHandler, IPointerUpHandler
     {
-        public GameObject targetObject;
-        private bool isDragging;
+        [SerializeField]
+        private GameObject targetUI;
         private GraphicRaycaster raycaster;
+        private RectTransform targetRectTransform;
+        private bool isDragging;
+        private void Awake()
+        {
+            raycaster = GetComponentInParent<GraphicRaycaster>();
+            targetRectTransform = targetUI.GetComponent<RectTransform>();
+        }
         public void OnPointerDown(PointerEventData eventData)
         {
-            isDragging=true;
+            if(!IsPointerOverUIObject(eventData)) return;
+
+            isDragging = true;
         }
         public void OnDrag(PointerEventData eventData)
         {
-            if(!isDragging)return;
-            targetObject.transform.position+=new Vector3(eventData.delta.x,eventData.delta.y,0);
+            if(!isDragging) return;
+
+            targetRectTransform.anchoredPosition += new Vector2(eventData.delta.x, eventData.delta.y);
         }
         public void OnPointerUp(PointerEventData eventData)
         {
-            isDragging=false;
+            isDragging = false;
         }
         private bool IsPointerOverUIObject(PointerEventData eventData)
         {

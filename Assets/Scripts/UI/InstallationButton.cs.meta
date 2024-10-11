@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: f7663abce3db3415ab9f1e4be830503a
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - shopPrefab: {fileID: 5020555320401356717, guid: 9dca37acedcdb436a825d059b39b636e, type: 3}
+  - shopData: {instanceID: 0}
+  - installationPanel: {instanceID: 0}
+  - upgradePanel: {instanceID: 0}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

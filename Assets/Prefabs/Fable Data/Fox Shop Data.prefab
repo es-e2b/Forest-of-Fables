@@ -49,13 +49,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ShopName: "\uC5EC\uC6B0\uC640 \uC2E0\uD3EC\uB3C4"
-  ShopImage: {fileID: 21300000, guid: cbd2c155bcff44da6838acbbdfa93797, type: 3}
+  ShopImage: {fileID: 21300000, guid: 24309fde5bce047528bcc4765cd3b916, type: 3}
   BackgroundSummary: "\uD3EC\uB3C4\uAC00 \uB108\uBB34\uB098\uB3C4 \uBA39\uACE0 \uC2F6\uC5C8\uB358
     \uC5EC\uC6B0\uB294 \uBCF8\uC778\uC774 \uC9C1\uC811 \uD3EC\uB3C4\uB97C \uC7AC\uBC30\uD558\uAE30\uB85C
     \uB9C8\uC74C \uBA39\uC5C8\uB2E4."
   BackgroundDetail: "\uC65C \uC774\uACF3\uC5D0 \uC654\uB0D0\uACE0? \uADF8\uAC74 \uB2E4
     \uC774 \uB9DD\uD560 \uD3EC\uB3C4 \uB54C\uBB38\uC774\uC9C0! \uC61B\uB0A0\uC5D0
-    \uB0B4\uAC00 \uC9C0\uB098\uAC00\uB294\uAE38\uC5D0 \uBB34\uC9C0 \uB9DB\uC788\uC5B4
+    \uB0B4\uAC00 \uC9C0\uB098\uAC00\uB294 \uAE38\uC5D0 \uBB34\uC9C0 \uB9DB\uC788\uC5B4
     \uBCF4\uC774\uB294 \uD3EC\uB3C4\uAC00 \uC788\uC5C8\uC9C0. \uD0D0\uC774 \uB098\uC11C
     \uADF8 \uD3EC\uB3C4\uB97C \uBA39\uC744\uB824\uACE0 \uD588\uB294\uB370 \uC0DD\uAC01\uBCF4\uB2E4
     \uD3EC\uB3C4\uB098\uBB34\uAC00 \uBB34\uC9C0 \uB192\uB354\uB77C\uACE0. \uB6F0\uC5B4\uB3C4
@@ -65,12 +65,11 @@ MonoBehaviour:
     \uD3EC\uB3C4 \uAE38\uB7EC\uC11C \uB9D8\uAECF \uBA39\uAE30\uB85C \uB9C8\uC74C
     \uBA39\uC5C8\uC9C0! \uB4DC\uB514\uC5B4 \uB0B4\uAC8C\uB3C4 \uD589\uBCF5\uD55C
     \uC21C\uAC04\uC774 \uC628\uAC70\uC57C!"
-  ShopPrefab: {fileID: 5020555320401356717, guid: 9dca37acedcdb436a825d059b39b636e, type: 3}
   InstallationPrice: 500
   ProductionTime: 8
   RestTime: 15
   WorkTime: 0
-  initialCapacity: 10
+  initialCapacity: 15
   initialUpgradePrice: 15
   CapacityByLevel: 5
   UpgradePriceByLevel: 15

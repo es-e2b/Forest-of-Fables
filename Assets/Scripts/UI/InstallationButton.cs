@@ -5,7 +5,6 @@ namespace Assets.Scripts.UI
     public class InstallationButton : MonoBehaviour
     {
         private GameObject shopsParent;
-        [SerializeField]
         private GameObject shopPrefab;
         [HideInInspector]
         public ShopData shopData;
@@ -16,6 +15,7 @@ namespace Assets.Scripts.UI
         private void Start()
         {
             shopsParent=GameObject.Find("Shops");
+            shopPrefab=Resources.Load<GameObject>("Shop Object");
         }
         public void Intstall()
         {

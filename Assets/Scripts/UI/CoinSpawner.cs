@@ -9,6 +9,8 @@ namespace Assets.Scripts.UI
         public bool isOccuring = false;
         private Vector2 startPosition;
         private RectTransform coinTransform;
+        [SerializeField]
+        private float Speed = 0.5f;
         
         private void Start()
         {
@@ -27,7 +29,7 @@ namespace Assets.Scripts.UI
             if(isOccuring == true)
             {
                 Timesetting += Time.deltaTime;
-                coinTransform.anchorMin=coinTransform.anchorMax+=new Vector2(0,Time.deltaTime)*0.125f;
+                coinTransform.anchorMin=coinTransform.anchorMax+=new Vector2(0,Time.deltaTime)*Speed;
                 if(Timesetting>=1f)
                 {
                     spawnedCoin.SetActive(false);

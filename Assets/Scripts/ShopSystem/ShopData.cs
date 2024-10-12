@@ -20,6 +20,9 @@ namespace Assets.Scripts.ShopSystem
         {
             WorkTime=ProductionTime*10;
             Level=1;
+            productionCapacity=initialCapacity;
+            restReward=initialCapacity*2;
+            upgradePrice=initialUpgradePrice;
         }
 
         private int level;
@@ -30,9 +33,6 @@ namespace Assets.Scripts.ShopSystem
             {
                 level=value;
                 OnChangedLevel.Invoke(level);
-                ProductionCapacity=CalculateProductionCapacity(level);
-                RestReward=CalculateRestReward(level);
-                UpgradePrice=CalculateUpgradePrice(level);
             }
         }
 
@@ -79,18 +79,9 @@ namespace Assets.Scripts.ShopSystem
         public void LevelUp()
         {
             Level++;
-        }
-        public int CalculateProductionCapacity(int level)
-        {
-            return initialCapacity+level*CapacityByLevel;
-        }
-        public int CalculateRestReward(int level)
-        {
-            return ProductionCapacity*2;
-        }
-        public int CalculateUpgradePrice(int level)
-        {
-            return initialUpgradePrice+level*UpgradePriceByLevel;
+            ProductionCapacity=initialCapacity+(level-1)*CapacityByLevel;
+            RestReward=ProductionCapacity*2;
+            UpgradePrice=initialUpgradePrice+level*UpgradePriceByLevel;
         }
 
         public UnityEvent<int> OnChangedLevel;

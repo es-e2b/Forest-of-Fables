@@ -33,6 +33,7 @@ namespace Assets.Scripts.ShopSystem
                 ProductionCapacity=CalculateProductionCapacity(level);
                 RestReward=CalculateRestReward(level);
                 UpgradePrice=CalculateUpgradePrice(level);
+                
             }
         }
 

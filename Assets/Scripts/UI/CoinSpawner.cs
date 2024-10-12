@@ -13,7 +13,7 @@ namespace Assets.Scripts.UI
         private void Start()
         {
             coinTransform=spawnedCoin.GetComponent<RectTransform>();
-            GetComponent<ShopObject>().OnProductionComplete.AddListener(SpawnCoinAbove);
+            // GetComponent<ShopObject>().OnProductionComplete.AddListener(SpawnCoinAbove);
         }
         public void SpawnCoinAbove()
         {

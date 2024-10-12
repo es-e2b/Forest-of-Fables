@@ -55,7 +55,7 @@ namespace Assets.Scripts.UI
         {
             levelText.text=""+shopData.Level;
             shopName.text=""+shopData.ShopName;
-            shopImage.sprite=shopData.ShopImage;
+            shopImage.sprite=shopData.ShopImage;  
             installationText.text=""+shopData.InstallationPrice;
             productionTimeText.text=""+shopData.ProductionTime;
             workTimeText.text=""+shopData.WorkTime;

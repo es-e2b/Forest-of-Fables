@@ -2,11 +2,13 @@ namespace Assets.Scripts.ShopSystem
 {
     using UnityEngine;
     using UnityEngine.Events;
+    using UnityEditor.Animations;
 
     public class ShopData : MonoBehaviour
     {
         public string ShopName;
         public Sprite ShopImage;
+        public AnimatorController ShopAnimeControl;
         public string BackgroundSummary;
         public string BackgroundDetail;
         public int InstallationPrice;
@@ -87,7 +89,7 @@ namespace Assets.Scripts.ShopSystem
         }
         public int CalculateRestReward(int level)
         {
-            return ProductionCapacity*2;
+            return ProductionCapacity*4;
         }
         public int CalculateUpgradePrice(int level)
         {

@@ -2,6 +2,8 @@ namespace Assets.Scripts.UI
 {
     using Assets.Scripts.ShopSystem;
     using UnityEngine;
+    using UnityEditor.Animations;
+
     public class InstallationButton : MonoBehaviour
     {
         private GameObject shopsParent;
@@ -13,6 +15,11 @@ namespace Assets.Scripts.UI
         private GameObject installationPanel;
         [SerializeField]
         private GameObject upgradePanel;
+        [SerializeField]
+        private Animator shopAnimeControl;
+        [SerializeField]
+        private AnimationClip shopAnime;
+
         private void Start()
         {
             shopsParent=GameObject.Find("Shops");
@@ -30,6 +37,7 @@ namespace Assets.Scripts.UI
         {
             GameObject newShop=Instantiate(shopPrefab, shopsParent.transform);
             newShop.GetComponent<ShopObject>().shopData = shopData;
+            newShop.GetComponent<Animator>().runtimeAnimatorController = shopData.ShopAnimeControl;
         }
     }
 }

@@ -20,15 +20,17 @@ namespace Assets.Scripts.UI
         private int min;
         private int max;
         public bool activeSelf;
-        public int Times = 1;
+        public int Times = 0;
         public ShopData shopData;
         public GameObject coinSpawner;
         public GameObject RestButton;
         public UnityEvent OnProductionComplete;
+        private Animator animator;
 
         public void Start()
         {
             SomeMethod();
+            animator = GetComponent<Animator>();
         }
 
         public void Update()
@@ -41,7 +43,9 @@ namespace Assets.Scripts.UI
                 if(Times == 10){
                     RestState = true;
                     TiredState = false;
+                    isAnimating = false;
                     Invoke("ChangeState", shopData.RestTime);
+                    animator.SetBool("Resting", true);
                     RestButton.SetActive(false);
                 }
                 if(WorkGauge.fillAmount <= 0.01){
@@ -66,6 +70,7 @@ namespace Assets.Scripts.UI
         }
 
         public void FallAsleep(){
+            animator.SetBool("Resting", true);
             OnProductionComplete.Invoke();
             isAnimating = false;
             RestButton.SetActive(false);
@@ -79,6 +84,7 @@ namespace Assets.Scripts.UI
             RestState = false;
             Times = 0;
             SomeMethod();
+            animator.SetBool("Resting", false);
         }
         
         public void StartGaugeAnimation(int min, int max, int startValue, int targetValue, float animationTime)
@@ -95,8 +101,7 @@ namespace Assets.Scripts.UI
 
         public void SomeMethod()
         {
-            //StartGaugeAnimation(0, 100, 100, 1, shopData.ProductionTime); // 예: 5초 동안 20에서 80으로 애니메이션
-            StartGaugeAnimation(0, 100, 100, 1, 3);
+            StartGaugeAnimation(0, 100, 100, 1, shopData.ProductionTime); // 예: 5초 동안 20에서 80으로 애니메이션
             Times++;
         }
 

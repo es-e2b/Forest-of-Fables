@@ -24,7 +24,7 @@ AnimatorState:
   m_Motion: {fileID: 7400000, guid: 2bb7b776d95e84a4a9d1f37edd5560be, type: 2}
   m_Tag: 
   m_SpeedParameter: 
-  m_MirrorParameter: 
+  m_MirrorParameter: Resting
   m_CycleOffsetParameter: 
   m_TimeParameter: 
 --- !u!1101 &-3115220065776421599
@@ -40,7 +40,7 @@ AnimatorStateTransition:
     m_EventTreshold: 0
   m_DstStateMachine: {fileID: 0}
   m_DstState: {fileID: -7473934799692216501}
-  m_Solo: 0
+  m_Solo: 1
   m_Mute: 0
   m_IsExit: 0
   serializedVersion: 3
@@ -118,7 +118,7 @@ AnimatorStateTransition:
     m_EventTreshold: 0
   m_DstStateMachine: {fileID: 0}
   m_DstState: {fileID: 5879634665450611890}
-  m_Solo: 0
+  m_Solo: 1
   m_Mute: 0
   m_IsExit: 0
   serializedVersion: 3

@@ -6,8 +6,6 @@ namespace Assets.Scripts.UI
 
     public class InstallationButton : MonoBehaviour
     {
-        private GameObject shopsParent;
-        private GameObject shopPrefab;
         [HideInInspector]
         public ShopData shopData;
         [SerializeField]
@@ -16,23 +14,21 @@ namespace Assets.Scripts.UI
         private GameObject upgradePanel;
         private void Start()
         {
-            shopsParent=GameObject.Find("Shops");
-            shopPrefab=Resources.Load<GameObject>("Shop Object");
+            if(shopData.IsPlaced)
+            Destroy(installationPanel);
+
+            shopData.OnChangedPlaced.AddListener(OnChangedPlaced);
         }
         public void Intstall()
         {
-            if(GameManager.Instance.Currency<shopData.InstallationPrice) return;
-            GameManager.Instance.Currency-=shopData.InstallationPrice;
-
-            upgradePanel.SetActive(true);
-            CreateShop();
-            Destroy(installationPanel);
+            if(GameManager.Instance.Currency<shopData.InstallationPrice)return;
+            GameObject.Find("Info Panel").SetActive(false);
+            PlacementManager.Instance.shopData = shopData;
+            PlacementManager.Instance.IsModeOn=true;
         }
-        public void CreateShop()
+        private void OnChangedPlaced(bool isPlaced)
         {
-            GameObject newShop=Instantiate(shopPrefab, shopsParent.transform);
-            newShop.GetComponent<ShopObject>().shopData = shopData;
-            newShop.GetComponent<Image>().sprite = shopData.ShopImage;
+            if(isPlaced) Destroy(installationPanel);
         }
     }
 }

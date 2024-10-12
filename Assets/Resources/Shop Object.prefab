@@ -1255,7 +1255,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 02194d980aa182f40a7ff49ef4327cb8, type: 3}
+  m_Sprite: {fileID: 0}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -1283,7 +1283,6 @@ MonoBehaviour:
   activeSelf: 0
   Times: 0
   shopData: {fileID: 0}
-  coinSpawner: {fileID: 0}
   RestButton: {fileID: 1025618293709127662}
   OnProductionComplete:
     m_PersistentCalls:

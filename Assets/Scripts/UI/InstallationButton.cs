@@ -2,6 +2,8 @@ namespace Assets.Scripts.UI
 {
     using Assets.Scripts.ShopSystem;
     using UnityEngine;
+    using UnityEngine.UI;
+
     public class InstallationButton : MonoBehaviour
     {
         private GameObject shopsParent;
@@ -30,6 +32,7 @@ namespace Assets.Scripts.UI
         {
             GameObject newShop=Instantiate(shopPrefab, shopsParent.transform);
             newShop.GetComponent<ShopObject>().shopData = shopData;
+            newShop.GetComponent<Image>().sprite = shopData.ShopImage;
         }
     }
 }

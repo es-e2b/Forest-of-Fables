@@ -17,7 +17,6 @@ namespace Assets.Scripts.UI
         public void OnDrag(PointerEventData eventData)
         {
             if(!isDragging)return;
-            print(eventData);
             targetObject.transform.position+=new Vector3(eventData.delta.x,eventData.delta.y,0)/108;
         }
         public void OnPointerUp(PointerEventData eventData)

@@ -3,9 +3,40 @@ namespace Assets.Scripts.ShopSystem
     using UnityEngine;
     using UnityEngine.Events;
     using UnityEditor.Animations;
+    using UI;
 
     public class ShopData : MonoBehaviour
     {
+        private bool isPlaced;
+        public bool IsPlaced
+        {
+            get => isPlaced;
+            set
+            {
+                isPlaced = value;
+                OnChangedPlaced.Invoke(value);
+            }
+        }
+        [HideInInspector]
+        public GameObject shopObject;
+        private GameObject shopPosition;
+        public GameObject ShopPosition
+        {
+            get => shopPosition;
+            set
+            {
+                if(shopPosition != null)
+                    shopPosition.GetComponent<PlacementPostion>().ShopData=null;
+                shopPosition = value;
+                if(value != null && shopObject != null)
+                {
+                    shopObject.transform.SetParent(shopPosition.transform);
+                    shopObject.transform.SetSiblingIndex(0);
+                    shopObject.GetComponent<RectTransform>().anchoredPosition=Vector2.zero;
+                    value.GetComponent<PlacementPostion>().ShopData=this;
+                }
+            }
+        }
         public string ShopName;
         public Sprite ShopImage;
         public AnimatorController ShopAnimeControl;
@@ -100,5 +131,6 @@ namespace Assets.Scripts.ShopSystem
         public UnityEvent<int> OnChangedProductionCapacity;
         public UnityEvent<int> OnChangedRestReward;
         public UnityEvent<int> OnChangedUpgradePrice;
+        public UnityEvent<bool> OnChangedPlaced;
     }
 }

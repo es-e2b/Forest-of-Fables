@@ -48,8 +48,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4c51e39d9716e4fdf9aa459213819ad0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  shopObject: {fileID: 0}
   ShopName: "\uC5EC\uC6B0\uC640 \uC2E0\uD3EC\uB3C4"
-  ShopImage: {fileID: 21300000, guid: 24309fde5bce047528bcc4765cd3b916, type: 3}
+  ShopImage: {fileID: 21300000, guid: 2c91949f4fbab9042a8edc2f100bdef8, type: 3}
   ShopAnimeControl: {fileID: 9100000, guid: f705691fcb56f4d4aba714c61819dde1, type: 2}
   BackgroundSummary: "\uD3EC\uB3C4\uAC00 \uB108\uBB34\uB098\uB3C4 \uBA39\uACE0 \uC2F6\uC5C8\uB358
     \uC5EC\uC6B0\uB294 \uBCF8\uC778\uC774 \uC9C1\uC811 \uD3EC\uB3C4\uB97C \uC7AC\uBC30\uD558\uAE30\uB85C
@@ -84,5 +85,8 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   OnChangedUpgradePrice:
+    m_PersistentCalls:
+      m_Calls: []
+  OnChangedPlaced:
     m_PersistentCalls:
       m_Calls: []

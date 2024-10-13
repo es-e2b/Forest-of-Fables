@@ -15,6 +15,10 @@ namespace Assets.Scripts
             get => currency;
             set
             {
+                if(value>currency)
+                {
+                    BGMManager.Instance.PlaySound(2);
+                }
                 currency=value;
                 OnChangedCurrency.Invoke(value);
             }

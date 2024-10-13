@@ -61,7 +61,7 @@ namespace Assets.Scripts.ShopSystem
             get => level;
             private set
             {
-                BGMManager.Instance.PlaySound(1);
+                if(value>1) BGMManager.Instance.PlaySound(1);
                 level=value;
                 OnChangedLevel.Invoke(level);
                 ProductionCapacity=CalculateProductionCapacity(level);

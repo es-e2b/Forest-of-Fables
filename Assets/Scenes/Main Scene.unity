@@ -9975,6 +9975,33 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3022315117742577969, guid: 11dfd9012800aa141ba6d7f05ff3b42e, type: 3}
+      propertyPath: BackgroundDetail.Array.size
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 3022315117742577969, guid: 11dfd9012800aa141ba6d7f05ff3b42e, type: 3}
+      propertyPath: BackgroundDetail.Array.data[1]
+      value: "\uD0D0\uC774 \uB098\uC11C \uADF8 \uD3EC\uB3C4\uB97C \uBA39\uC744\uB824\uACE0
+        \uD588\uB294\uB370 \uC0DD\uAC01\uBCF4\uB2E4 \uD3EC\uB3C4\uB098\uBB34\uAC00
+        \uBB34\uC9C0 \uB192\uB354\uB77C\uACE0. "
+      objectReference: {fileID: 0}
+    - target: {fileID: 3022315117742577969, guid: 11dfd9012800aa141ba6d7f05ff3b42e, type: 3}
+      propertyPath: BackgroundDetail.Array.data[2]
+      value: "\uB6F0\uC5B4\uB3C4 \uBCF4\uACE0 \uB098\uBB34\uB97C \uC62C\uB77C\uD0C0\uBCF4\uB2E4\uAC00
+        \uBBF8\uB044\uB7EC\uC9C0\uACE0..."
+      objectReference: {fileID: 0}
+    - target: {fileID: 3022315117742577969, guid: 11dfd9012800aa141ba6d7f05ff3b42e, type: 3}
+      propertyPath: BackgroundDetail.Array.data[3]
+      value: "\uBCC4\uAC83\uC744 \uB2E4 \uD574\uB3C4 \uACB0\uAD6D \uC5BB\uC9C0\uB97C
+        \uBABB\uD588\uC9C0. \uADF8\uB798\uC11C \uCC38\uC9C0 \uBABB\uD558\uACE0 \uB0B4\uAC00
+        \uC9C1\uC811 \uD3EC\uB3C4 \uAE38\uB7EC\uC11C \uB9D8\uAECF \uBA39\uAE30\uB85C
+        \uB9C8\uC74C \uBA39\uC5C8\uC9C0!"
+      objectReference: {fileID: 0}
+    - target: {fileID: 3022315117742577969, guid: 11dfd9012800aa141ba6d7f05ff3b42e, type: 3}
+      propertyPath: BackgroundDetail.Array.data[4]
+      value: "\uB4DC\uB514\uC5B4 \uB0B4\uAC8C\uB3C4 \uD589\uBCF5\uD55C \uC21C\uAC04\uC774
+        \uC628\uAC70\uC57C!"
+      objectReference: {fileID: 0}
     - target: {fileID: 8527140848053688576, guid: 11dfd9012800aa141ba6d7f05ff3b42e, type: 3}
       propertyPath: m_Name
       value: Fox Shop Data
@@ -14868,7 +14895,8 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4756216712172049803, guid: 540d94d9d242446a8be0f15c32802d94, type: 3}
       propertyPath: BackgroundDetail.Array.data[6]
-      value: 
+      value: "\uC548\uC804\uD55C \uACF3\uC744 \uCC3E\uB2E4\uAC00 \uC774\uACF3\uAE4C\uC9C0
+        \uC624\uAC8C \uB418\uC5C8\uB124\uC6A9."
       objectReference: {fileID: 0}
     - target: {fileID: 5322565711669025940, guid: 540d94d9d242446a8be0f15c32802d94, type: 3}
       propertyPath: m_Pivot.x

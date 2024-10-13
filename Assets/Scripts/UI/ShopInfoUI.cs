@@ -10,8 +10,6 @@ namespace Assets.Scripts.UI
         [SerializeField]
         private InstallationButton installationButton;
         [SerializeField]
-        private UpgradeButton UpgradeButton;
-        [SerializeField]
         private ShopData shopData;
         [SerializeField]
         private TMP_Text shopName;
@@ -31,8 +29,6 @@ namespace Assets.Scripts.UI
         private TMP_Text restTimeText;
         [SerializeField]
         private TMP_Text restRewardText;
-        [SerializeField]
-        private TMP_Text upgradePriceText;
 
         private void UpdateLevel(int level)
         {
@@ -42,13 +38,13 @@ namespace Assets.Scripts.UI
         {
             productionCapacityText.text=""+productionCapacity;
         }
-        private void UpdateUpgradePrice(int upgradePrice)
-        {
-            upgradePriceText.text=""+upgradePrice;
-        }
         private void UpdateRestReward(int restReward)
         {
             restRewardText.text=""+restReward;
+        }
+        public void OpenUpgradeUI()
+        {
+            UpgradeUI.Instance.ApplyShopdata(shopData);
         }
 
         private void Start()
@@ -62,14 +58,11 @@ namespace Assets.Scripts.UI
             productionCapacityText.text=""+shopData.ProductionCapacity;
             restTimeText.text=""+shopData.RestTime;
             restRewardText.text=""+shopData.RestReward;
-            upgradePriceText.text=""+shopData.UpgradePrice;
 
             installationButton.shopData=shopData;
-            UpgradeButton.shopData=shopData;
             
             shopData.OnChangedLevel.AddListener(UpdateLevel);
             shopData.OnChangedProductionCapacity.AddListener(UpdateProductionCapacity);
-            shopData.OnChangedUpgradePrice.AddListener(UpdateUpgradePrice);
             shopData.OnChangedRestReward.AddListener(UpdateRestReward);
         }
         

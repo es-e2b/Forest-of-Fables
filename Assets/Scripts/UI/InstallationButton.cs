@@ -10,8 +10,7 @@ namespace Assets.Scripts.UI
         public ShopData shopData;
         [SerializeField]
         private GameObject installationPanel;
-        [SerializeField]
-        private GameObject upgradePanel;
+        public GameObject UpgradePanel;
         [SerializeField]
         private Animator shopAnimeControl;
         [SerializeField]
@@ -30,6 +29,8 @@ namespace Assets.Scripts.UI
             GameObject.Find("Info Panel").SetActive(false);
             PlacementManager.Instance.shopData = shopData;
             PlacementManager.Instance.IsModeOn=true;
+
+            UpgradePanel.SetActive(true);
         }
         private void OnChangedPlaced(bool isPlaced)
         {

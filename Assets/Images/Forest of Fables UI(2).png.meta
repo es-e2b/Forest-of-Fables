@@ -43,7 +43,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -121,7 +121,112 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: Forest of Fables UI(2)_0
+      rect:
+        serializedVersion: 2
+        x: 106
+        y: 1143
+        width: 769
+        height: 579
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bfe69906db14e46bbbb972b9c56c5c8e
+      internalID: -802933391
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Forest of Fables UI(2)_1
+      rect:
+        serializedVersion: 2
+        x: 1113
+        y: 1143
+        width: 768
+        height: 590
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e0f0510847a574a91ac2bd639fed19c3
+      internalID: -698286522
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Forest of Fables UI(2)_2
+      rect:
+        serializedVersion: 2
+        x: 2350
+        y: 1689
+        width: 24
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 50bd1a75fc0994fc4b3537e02de98dec
+      internalID: 551361992
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Forest of Fables UI(2)_3
+      rect:
+        serializedVersion: 2
+        x: 106
+        y: 283
+        width: 1139
+        height: 698
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 98e944b62685941fcb52f324b0270055
+      internalID: 1263118752
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Forest of Fables UI(2)_4
+      rect:
+        serializedVersion: 2
+        x: 1999
+        y: 320
+        width: 942
+        height: 1344
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: df73595eb8f0b4be59ff6dbacfad4cd5
+      internalID: -124498609
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
@@ -132,7 +237,12 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Forest of Fables UI(2)_0: -802933391
+      Forest of Fables UI(2)_1: -698286522
+      Forest of Fables UI(2)_2: 551361992
+      Forest of Fables UI(2)_3: 1263118752
+      Forest of Fables UI(2)_4: -124498609
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

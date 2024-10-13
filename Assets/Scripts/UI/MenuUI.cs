@@ -18,5 +18,10 @@ namespace Assets.Scripts.UI
         {
             UpgradeUI.Instance.ApplyShopdata(shopData);
         }
+        public void OpenPlaceUI()
+        {
+            PlacementManager.Instance.shopData=shopData;
+            PlacementManager.Instance.IsModeOn=true;
+        }
     }
 }

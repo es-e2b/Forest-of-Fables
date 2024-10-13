@@ -22,7 +22,6 @@ namespace Assets.Scripts.UI
         public bool activeSelf;
         public int Times = 0;
         public ShopData shopData;
-        public GameObject coinSpawner;
         public GameObject RestButton;
         public UnityEvent OnProductionComplete;
         private Animator animator;

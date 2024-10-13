@@ -47,6 +47,7 @@ namespace Assets.Scripts.UI
             newShop.GetComponent<Image>().sprite = shopData.ShopImage;
             shopData.IsPlaced = true;
             shopData.shopObject = newShop;
+            newShop.GetComponent<Animator>().runtimeAnimatorController = shopData.ShopAnimeControl;
 
             return newShop;
         }

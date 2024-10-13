@@ -1,9 +1,5 @@
 fileFormatVersion: 2
-<<<<<<<< HEAD:Assets/Resources/Shop Object 2.prefab.meta
 guid: 20a82d3d5ffe341aebadbef7adf3ee33
-========
-guid: d66db12fabb8e4f0bb3340ac8138fc81
->>>>>>>> feature/shop/move:Assets/Prefabs/Placement Position.prefab.meta
 PrefabImporter:
   externalObjects: {}
   userData: 

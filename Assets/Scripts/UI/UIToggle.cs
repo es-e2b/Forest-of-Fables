@@ -23,6 +23,7 @@ namespace Assets.Scripts.UI
             foreach(GameObject closeButton in closeButtons)
             {
                 closeButton.GetComponent<Button>().onClick.AddListener(CloseUI);
+                
             }
             foreach(GameObject toggleButton in toggleButtons)
             {

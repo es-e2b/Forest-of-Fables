@@ -19,6 +19,7 @@ namespace Assets.Scripts.UI
         }
         public void SpawnCoinAbove()
         {
+            BGMManager.Instance.PlaySound(2);
             startPosition=coinTransform.anchorMin;
             spawnedCoin.SetActive(true);
             isOccuring = true;

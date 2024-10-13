@@ -23,6 +23,12 @@ namespace Assets.Scripts
                 OnChangedCurrency.Invoke(value);
             }
         }
+
+        void Start()
+        {
+            Application.runInBackground = true;
+        }
+
         private void Awake()
         {
             if (Instance != null && Instance != this)

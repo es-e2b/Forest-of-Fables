@@ -18,8 +18,10 @@ namespace Assets.Scripts.UI
 
         private void Start()
         {
+            shopData=GetComponent<ShopInfoUI>().ShopData;
+
             if(shopData.IsPlaced)
-            Destroy(installationPanel);
+                Destroy(installationPanel);
 
             shopData.OnChangedPlaced.AddListener(OnChangedPlaced);
         }

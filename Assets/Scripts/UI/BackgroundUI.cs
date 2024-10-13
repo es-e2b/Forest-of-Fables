@@ -25,14 +25,21 @@ namespace Assets.Scripts.UI
         [SerializeField]
         private Image image;
         [SerializeField]
-        private TMP_Text descriptionText;
+        private GameObject descriptionObject;
+        [SerializeField]
+        private GameObject descriptionPrefab;
         public void ApplyShopdata(ShopData data)
         {
             shopData=data;
 
             nameText.text = ""+shopData.ShopName;
             image.sprite=shopData.ShopImage;
-            descriptionText.text=""+shopData.BackgroundDetail;
+
+            foreach(string detail in shopData.BackgroundDetail)
+            {
+                GameObject detailObject=Instantiate(descriptionPrefab, descriptionObject.transform);
+                detailObject.GetComponent<TMP_Text>().text=detail;
+            }
 
             backgroundPanel.SetActive(true);
         }

@@ -41,7 +41,7 @@ namespace Assets.Scripts.ShopSystem
         public Sprite ShopImage;
         public AnimatorController ShopAnimeControl;
         public string BackgroundSummary;
-        public string BackgroundDetail;
+        public string[] BackgroundDetail;
         public int InstallationPrice;
         public int ProductionTime;
         public int RestTime;

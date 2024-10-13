@@ -11,6 +11,7 @@ namespace Assets.Scripts.UI
         private InstallationButton installationButton;
         [SerializeField]
         private ShopData shopData;
+        public ShopData ShopData { get { return shopData; } }
         [SerializeField]
         private TMP_Text shopName;
         [SerializeField]
@@ -58,8 +59,6 @@ namespace Assets.Scripts.UI
             productionCapacityText.text=""+shopData.ProductionCapacity;
             restTimeText.text=""+shopData.RestTime;
             restRewardText.text=""+shopData.RestReward;
-
-            installationButton.shopData=shopData;
             
             shopData.OnChangedLevel.AddListener(UpdateLevel);
             shopData.OnChangedProductionCapacity.AddListener(UpdateProductionCapacity);

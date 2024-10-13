@@ -69,6 +69,7 @@ namespace Assets.Scripts.UI
         }
 
         public void FallAsleep(){
+            BGMManager.Instance.PlaySound(2);
             animator.SetBool("Resting", true);
             OnProductionComplete.Invoke();
             isAnimating = false;

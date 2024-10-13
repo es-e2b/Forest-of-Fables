@@ -1,0 +1,92 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &2196164925924444330
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2991888709845082727}
+  - component: {fileID: 4730304840552646902}
+  m_Layer: 0
+  m_Name: PIG Shop Data
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &2991888709845082727
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2196164925924444330}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 100, y: 100}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &4730304840552646902
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2196164925924444330}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4c51e39d9716e4fdf9aa459213819ad0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  shopObject: {fileID: 0}
+  ShopName: "\uBCBD\uB3CC\uC744 \uB9CC\uB4DC\uB294 \uC544\uAE30 \uB3FC\uC9C0"
+  ShopImage: {fileID: 21300000, guid: f21bec3da12667a46ae8545bc80ca5e0, type: 3}
+  ShopAnimeControl: {fileID: 9100000, guid: afec3a4a1f7cbdb4b9ad7cb8e468f50f, type: 2}
+  BackgroundSummary: "\uBCBD\uB3CC \uC9D1\uC744 \uC9C0\uC5B4 \uB291\uB300\uB85C\uBD80\uD130
+    \uC790\uC2E0\uC744 \uC9C0\uCF1C\uB0B8 \uC544\uAE30\uB3FC\uC9C0\uB294 \uB2E4\uB978
+    \uB3D9\uBB3C\uB4E4\uC5D0\uAC8C\uB3C4 \uC548\uC804\uD55C \uC9D1\uC744 \uC9C0\uC5B4\uC918\uC57C\uACA0\uB2E4\uB294
+    \uC0AC\uBA85\uAC10\uC744 \uAC00\uC9C0\uAC8C \uB418\uC5C8\uB2E4."
+  BackgroundDetail: "\uC548\uB155! \uB09C \uC9D1 \uC9D3\uB294 \uC544\uAE30\uB3FC\uC9C0\uC57C!
+    \uB098\uB294 \uC774\uACF3\uC73C\uB85C \uC624\uAE30\uC804\uC5D0 \uB098\uB9CC\uC758
+    \uC9D1\uC744 \uB9CC\uB4E4\uACE0 \uC788\uC5C8\uC5B4./  \uADF8\uB7EC\uB358 \uC5B4\uB290\uB0A0
+    \uBB34\uC2DC\uBB34\uC2DC\uD55C \uB291\uB300\uAC00 \uB0A0 \uD574\uCF54\uC9C0 \uD560\uB824\uACE0
+    \uC9D1\uC744 \uBD80\uC218\uAE30 \uC2DC\uC791\uD588\uC5B4! / \uB291\uB300\uAC00
+    \uC9D1\uC744 \uBD80\uC218\uB294\uB370 \uC2E0\uACBD\uC4F8 \uB3D9\uC548 \uACA8\uC6B0
+    \uB3C4\uB9DD\uCCD0 \uB098\uC654\uC5B4./  \uADF8 \uB2E4\uC74C \uBCBD\uB3CC \uC9D1\uC744
+    \uB9CC\uB4E4\uC5C8\uB354\uB2C8 \uB291\uB300 \uB140\uC11D\uC774 \uC9D1\uC744 \uBD80\uC218\uC9C0
+    \uBABB\uD558\uACE0 \uAC08\uAE38\uC744 \uAC14\uC5B4. / \uADF8\uB9AC\uACE0 \uB2E4\uC9D0\uC744
+    \uD588\uC9C0 \uC704\uD5D8\uD55C \uB140\uC11D\uB4E4\uB85C\uBD80\uD130\uC11C \uC548\uC804\uD55C
+    \uC9D1\uC744 \uB9CC\uB4E4\uAE30\uB85C \uB2E4\uC9D0\uD588\uC5B4!"
+  InstallationPrice: 1250
+  ProductionTime: 20
+  RestTime: 60
+  WorkTime: 0
+  initialCapacity: 30
+  initialUpgradePrice: 60
+  CapacityByLevel: 25
+  UpgradePriceByLevel: 45
+  OnChangedLevel:
+    m_PersistentCalls:
+      m_Calls: []
+  OnChangedProductionCapacity:
+    m_PersistentCalls:
+      m_Calls: []
+  OnChangedRestReward:
+    m_PersistentCalls:
+      m_Calls: []
+  OnChangedUpgradePrice:
+    m_PersistentCalls:
+      m_Calls: []
+  OnChangedPlaced:
+    m_PersistentCalls:
+      m_Calls: []

@@ -12,10 +12,6 @@ namespace Assets.Scripts.UI
         private GameObject installationPanel;
         [SerializeField]
         private GameObject upgradePanel;
-        [SerializeField]
-        private Animator shopAnimeControl;
-        [SerializeField]
-        private AnimationClip shopAnime;
 
         private void Start()
         {

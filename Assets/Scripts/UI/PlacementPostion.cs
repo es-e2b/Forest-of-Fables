@@ -30,12 +30,9 @@ namespace Assets.Scripts.UI
 
         public void OnPointerDown(PointerEventData eventData)
         {
-            print("good2");
             if(!isPlaceable)return;
-            print("good3");
             if(!PlacementManager.Instance.shopData.IsPlaced&&PlacementManager.Instance.CanIntstall())
             {
-                print("good");
                 PlacementManager.Instance.CreateShop().GetComponent<ShopObject>().shopData.ShopPosition=gameObject;
             }
             else

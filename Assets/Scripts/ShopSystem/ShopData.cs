@@ -2,7 +2,7 @@ namespace Assets.Scripts.ShopSystem
 {
     using UnityEngine;
     using UnityEngine.Events;
-    using UnityEditor.Animations;
+    //using UnityEditor.Animations;
     using UI;
 
     public class ShopData : MonoBehaviour
@@ -39,7 +39,8 @@ namespace Assets.Scripts.ShopSystem
         }
         public string ShopName;
         public Sprite ShopImage;
-        public AnimatorController ShopAnimeControl;
+        //public AnimatorController ShopAnimeControl;
+        public RuntimeAnimatorController ShopAnimeControl;
         public string BackgroundSummary;
         public string[] BackgroundDetail;
         public int InstallationPrice;
